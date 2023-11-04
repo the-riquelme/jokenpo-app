@@ -10,12 +10,13 @@
     <string name="result_value">0 X 0</string>
     <string name="play_again_text">Jogar de Novo</string>
 
-    <string name="cpu_selected">CPU selected %1$s</string>
-    <string name="you_selected_rock">You selected 👊🏻</string>
-    <string name="you_selected_paper">You selected ✋🏻</string>
-    <string name="you_selected_scissors">You selected ✌🏻</string>
-    <string name="tie">It\'s a tie!</string>
-    <string name="win">You win!</string>
-    <string name="loss">You win!</string>
-    <string name="score_template">%1$d : %2$d</string>
+    <string name="selected_rock">Selecionou: 👊🏻</string>
+    <string name="selected_paper">Selecionou: ✋</string>
+    <string name="selected_scissors">Selecionou: ✌</string>
+
+    <string name="score_template">%1$d X %2$d</string>
+    <string name="player_win">Jogador Venceu!</string>
+    <string name="player_loss">Jogador Perdeu!</string>
+    <string name="tie">Empate</string>
+
 </resources>

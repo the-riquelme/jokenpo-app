@@ -48,6 +48,7 @@
         android:padding="10dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/rock_text"
+        android:onClick="clickOnRock"
         />
 
     <ImageButton
@@ -61,6 +62,7 @@
         android:padding="10dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/paper_text"
+        android:onClick="clickOnPaper"
         />
 
     <ImageButton
@@ -74,6 +76,7 @@
         android:padding="10dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/scissors_text"
+        android:onClick="clickOnScissors"
         />
 
     <TextView
@@ -130,6 +133,7 @@
         app:cornerRadius="8dp"
         android:layout_marginBottom="32dp"
         app:backgroundTint="@color/purple"
+        android:onClick="startNewGame"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
