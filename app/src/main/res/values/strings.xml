@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Jokenpô App</string>
+    <string name="app_name">jokenpo</string>
+    <string name="title_text">JOKENPÔ GAME</string>
+    <string name="rock_text">Pedra</string>
+    <string name="paper_text">Papel</string>
+    <string name="scissors_text">Tesoura</string>
+    <string name="choose_text">Escolha uma opção</string>
+    <string name="cpu_choice_text">Escolha da Máquina:</string>
+    <string name="result_text">Jogador X Máquina</string>
+    <string name="result_value">0 X 0</string>
+    <string name="play_again_text">Jogar de Novo</string>
+
+    <string name="cpu_selected">CPU selected %1$s</string>
+    <string name="you_selected_rock">You selected 👊🏻</string>
+    <string name="you_selected_paper">You selected ✋🏻</string>
+    <string name="you_selected_scissors">You selected ✌🏻</string>
+    <string name="tie">It\'s a tie!</string>
+    <string name="win">You win!</string>
+    <string name="loss">You win!</string>
+    <string name="score_template">%1$d : %2$d</string>
 </resources>

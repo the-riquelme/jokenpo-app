@@ -10,15 +10,30 @@
     >
 
     <TextView
-        android:id="@+id/titleApp"
+        android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="JOKENPÔ GAME"
+        android:text="@string/title_text"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="32sp"
         android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:layout_marginTop="82dp"
+        />
+
+    <TextView
+        android:id="@+id/selectedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_text"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
         android:layout_marginTop="32dp"
         />
 
@@ -27,12 +42,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/rock"
-        app:layout_constraintTop_toBottomOf="@id/titleApp"
+        app:layout_constraintTop_toBottomOf="@id/selectedText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/paperImg"
         android:padding="10dp"
         android:layout_marginTop="32dp"
-        android:contentDescription="Pedra"
+        android:contentDescription="@string/rock_text"
         />
 
     <ImageButton
@@ -40,12 +55,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/paper"
-        app:layout_constraintTop_toBottomOf="@id/titleApp"
+        app:layout_constraintTop_toBottomOf="@id/selectedText"
         app:layout_constraintStart_toEndOf="@id/rockImg"
         app:layout_constraintEnd_toStartOf="@+id/scissorsImg"
         android:padding="10dp"
         android:layout_marginTop="32dp"
-        android:contentDescription="Papel"
+        android:contentDescription="@string/paper_text"
         />
 
     <ImageButton
@@ -53,12 +68,68 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/scissors"
-        app:layout_constraintTop_toBottomOf="@id/titleApp"
+        app:layout_constraintTop_toBottomOf="@id/selectedText"
         app:layout_constraintStart_toEndOf="@id/paperImg"
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="10dp"
         android:layout_marginTop="32dp"
-        android:contentDescription="Tesoura"
+        android:contentDescription="@string/scissors_text"
+        />
+
+    <TextView
+        android:id="@+id/cpuChoiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpu_choice_text"
+        app:layout_constraintTop_toBottomOf="@id/paperImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_text"
+        app:layout_constraintTop_toBottomOf="@id/cpuChoiceText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/resultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_value"
+        app:layout_constraintTop_toBottomOf="@id/resultText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:layout_marginTop="32dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playAgainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again_text"
+        app:layout_constraintTop_toBottomOf="@id/resultValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="32dp"
+        app:backgroundTint="@color/purple"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
