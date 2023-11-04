@@ -6,6 +6,16 @@ O aplicativo de Jokenpô permite aos jogadores (humano e CPU) escolher entre ped
 
 ---
 
+<h2 id="technologies">🛠&nbsp; Tecnologias</h2>
+
+Este projeto foi desenvolvido com as seguintes tecnologias:
+
+✔️ [Kotlin](https://kotlinlang.org/docs/classes.html)
+
+✔️ [Adroid Studio](https://developer.android.com/studio)
+
+---
+
 <h2 id="author">👨‍💻&nbsp;Desenvolvedor</h2>
 
 👤 [Riquelme Damião Silva](https://github.com/the-riquelme)
